@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href = "/statics/styles.css" />
+        <style type="text/css">
+            body {
+                background-color: blue;
+            }
+            ol {
+                font-size: 36pt;
+                background-color: purple;
+            }
+            span {
+                margin-left: 250px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>My Favorite Artists</h1>
+        <ol>
+            {%for i in range(0, len)%}
+            <li>{{ Artists[i] }}<span><img src={{ Images[i] }} height="200px" width="300px"/></span></li>
+            {%endfor%}
+        </ol>
+    </body>
+</html>
